@@ -1,110 +1,284 @@
 /* PAGE-SPECIFIC STYLES FOR THE REVIEWS PAGE */
 /*-- -------------------------- -->
-<---           Reviews          -->
+<---          Events            -->
 <--- -------------------------- -*/
-/* Mobile */
-@media only screen and (min-width: 0em) {
-  #reviews {
-    margin: auto;
-    padding-top: 7.5rem;
-    padding-bottom: 3.125rem;
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #events-1652 {
+    padding: var(--sectionPadding);
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
   }
-  #reviews .container {
-    width: 96%;
-    max-width: 82.5rem;
-  }
-  #reviews .review {
+  #events-1652 .cs-container {
     width: 100%;
-    max-width: 25.625rem;
+    max-width: 80rem;
     margin: auto;
-    margin-bottom: 6.25rem;
-    padding: 4rem 1.875rem 1.125rem 1.875rem;
-    background: #fff;
-    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
-    border-radius: 0.3125rem;
     display: flex;
     flex-direction: column;
-    position: relative;
+    justify-content: center;
   }
-  #reviews .review:last-of-type {
-    margin-bottom: 0;
-  }
-  #reviews .review .profile {
-    width: 6.1875rem;
-    height: 6.1875rem;
-    margin-bottom: 1rem;
-    margin-left: 0;
-    border-radius: 50%;
-    display: block;
-    position: absolute;
-    top: calc(-51 / 16 * 1rem);
-    left: 1.875rem;
-  }
-  #reviews .review p {
-    line-height: 1.5em;
-    text-align: left;
-    margin-bottom: 1.75rem;
-  }
-  #reviews .review .star-group {
-    margin-top: auto;
-    padding-top: 1rem;
-    border-top: 1px solid #e7e7e7;
+  #events-1652 .cs-image {
     display: flex;
-    justify-content: space-between;
+    position: relative;
+    width: 100%;
+  }
+  #events-1652 .cs-picture {
+    width: 100%;
+    /* 328px - 752px */
+    height: clamp(20.5rem, 80vw, 47rem);
+    display: block;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  #events-1652 .cs-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #events-1652 .cs-events {
+    width: 100%;
+    max-width: 46.125rem;
+    background-color: #f7f7f7;
+    display: flex;
+    /* 40px - 48px top */
+    padding: clamp(2.5rem, 4vw, 3rem) clamp(1rem, 5vw, 3rem) clamp(1rem, 5vw, 3rem);
+    flex-direction: column;
     align-items: center;
-    flex-wrap: nowrap;
+    gap: 2.5rem;
   }
-  #reviews .review .star-group .name {
-    font-weight: bold;
-    line-height: 1.5rem;
+  #events-1652 .cs-content {
     text-align: left;
-    color: #1a1a1a;
-    display: block;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
-  #reviews .review .star-group .desc {
-    font-weight: 400;
-    color: #575757;
-    display: block;
-  }
-  #reviews .review .star-group img {
-    width: 5.6875rem;
-    height: 0.9375rem;
+  #events-1652 .cs-title {
+    color: var(--headerColor);
     margin: 0;
-    display: block;
   }
-}
-/* Tablet */
-@media only screen and (min-width: 48em) {
-  #reviews {
-    padding-top: 9.375rem;
-    padding-bottom: 3.125rem;
-  }
-  #reviews .container {
-    font-size: min(1.4vw, 1em);
+  #events-1652 .cs-card-group {
+    width: 100%;
+    margin: 0;
     padding: 0;
     display: flex;
+    flex-direction: column;
+    /* 16px - 20px */
+    gap: clamp(1rem, 3vw, 1.25rem);
+  }
+  #events-1652 .cs-item {
+    list-style: none;
+    background-color: #fff;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    width: 100%;
+    /* 16px - 32px */
+    padding: clamp(1rem, 2vw, 2rem);
+    /* prevents padding from affecting height and width */
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-start;
+    /* 16px - 24px */
+    gap: clamp(1rem, 2vw, 1.5rem);
+  }
+  #events-1652 .cs-date {
+    font-size: 1rem;
+    line-height: 1.2em;
+    /* 80px - 100px */
+    width: clamp(5rem, 10vw, 6.25rem);
+    height: clamp(5rem, 10vw, 6.25rem);
+    color: var(--primary);
+    background-color: #111926;
+    display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    column-gap: 1.875rem;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    flex: none;
   }
-  #reviews .review {
+  #events-1652 .cs-date strong {
+    font-size: 1.9375rem;
+    line-height: 1.2em;
+    color: #fff;
+  }
+  #events-1652 .cs-info-wrapper {
+    display: flex;
+    flex-direction: column;
+    /* 24px - 48px */
+    gap: clamp(1.5rem, 3vw, 3rem);
+  }
+  #events-1652 .cs-info {
+    display: flex;
+    flex-direction: column;
+  }
+  #events-1652 .cs-h3 {
+    font-size: 1.25rem;
+    line-height: 1.2em;
+    font-weight: 700;
+    margin: 0 0 0.5rem 0;
+    color: var(--headerColor);
+  }
+  #events-1652 .cs-location {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.6vw, 1rem);
+    line-height: 1.5em;
+    /* 8px -k 24px */
+    margin: 0 0 clamp(0.5rem, 2vw, 1.5rem);
+    color: var(--bodyTextColor);
+  }
+  #events-1652 .cs-time {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.6vw, 1rem);
+    line-height: 1.5em;
     margin: 0;
-    margin-bottom: 9.375rem;
+    color: var(--bodyTextColor);
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
   }
-  #reviews .review:last-of-type {
-    margin-bottom: 9.375rem;
+  #events-1652 .cs-icon {
+    width: 1.5rem;
+    height: auto;
+  }
+  #events-1652 .cs-button-wrapper {
+    display: flex;
+    position: relative;
+    align-items: center;
+  }
+  #events-1652 .cs-button-solid {
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    min-width: 9.375rem;
+    padding: 0 1.5rem;
+    background-color: var(--primary);
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+  }
+  #events-1652 .cs-button-solid:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: #000;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 0.3s;
+  }
+  #events-1652 .cs-button-solid:hover:before {
+    width: 100%;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #events-1652 .cs-container {
+    flex-direction: row;
+    align-items: stretch;
+  }
+  #events-1652 .cs-image {
+    width: 45%;
+    max-width: 33.875rem;
+    height: auto;
+    padding-top: 7.5rem;
+    /* sends it to the right in the 2nd position */
+    order: 2;
+  }
+  #events-1652 .cs-picture {
+    max-height: none;
+    height: auto;
+  }
+  #events-1652 .cs-events {
+    min-width: 26.25rem;
+    /* 420px - 738px */
+    width: clamp(26.25rem, 52.8vw, 46.125rem);
+    /* 24px - 48px */
+    padding: clamp(1.5rem, 3vw, 3rem);
+    justify-content: flex-start;
+  }
+}
+/* Large Desktop - 1300px */
+@media only screen and (min-width: 81.25rem) {
+  #events-1652 .cs-info-wrapper {
+    flex-direction: row;
+  }
+  #events-1652 .cs-calendar {
+    width: 100%;
+    margin: auto;
   }
 }
 /* Dark Mode */
-@media only screen and (min-width: 0em) {
-  body.dark-mode #reviews .review {
-    background: var(--medium);
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #events-1652 .cs-title,
+  body.dark-mode #events-1652 .cs-h3,
+  body.dark-mode #events-1652 .cs-location,
+  body.dark-mode #events-1652 .cs-time {
+    color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #reviews .review .name {
-    color: #fff;
+  body.dark-mode #events-1652 .cs-location,
+  body.dark-mode #events-1652 .cs-time {
+    opacity: 0.8;
   }
-  body.dark-mode #reviews .review .desc {
-    color: #fff;
-    opacity: 0.7;
+  body.dark-mode #events-1652 .cs-date {
+    background-color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #events-1652 .cs-date strong {
+    color: var(--bodyTextColor);
+  }
+  body.dark-mode #events-1652 .cs-events {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  body.dark-mode #events-1652 .cs-item {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}
+/*-- -------------------------- -->
+<---            Map             -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #map-720 {
+    min-height: 33.75rem;
+    padding: var(--sectionPadding);
+    /* prevents padding and border from affecting height and width */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  #map-720 .cs-background {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #map-720 .cs-background img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* Makes img tag act as a background image */
+    object-fit: cover;
   }
 }

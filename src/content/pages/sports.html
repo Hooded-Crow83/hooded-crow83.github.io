@@ -1,0 +1,140 @@
+---
+title: 'About'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'sports/'
+eleventyNavigation:
+    key: Sports
+    order: 200
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/about.css">
+{% endblock %}
+
+{% block body %}
+    <!-- ============================================ -->
+    <!--                    LANDING                   -->
+    <!-- ============================================ -->
+
+    <section id="int-hero">
+        <h1 id="home-h">Our Sports</h1>
+        <picture>
+            <source media="(max-width: 600px)" srcset="/assets/images/GroupPhoto9.jpg">
+            <source media="(min-width: 601px)" srcset="/assets/images/GroupPhoto9.jpg">
+            <img aria-hidden="true" decoding="async" src="/assets/images/GroupPhoto9.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
+        </picture>
+
+    </section>
+<!-- ============================================ -->
+<!--                    Services                  -->
+<!-- ============================================ -->
+<section id="services-1628">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex">
+                <span class="cs-topper">Our Sports</span>
+                <h2 class="cs-title">Helping visually impaired people all over Georgia discover their athletic potential.</h2>
+            </div>
+            <p class="cs-text">
+                Founded in 2011, Georgia Blind Sports Association is a 501c3 nonprofit corporation that serves as an advocate for youth and adult visually impaired athletes in Georgia. We encourage these individuals to be active in sports that promote teamwork, engage in a healthy lifestyle and empower them to use their athletic abilities. See a full list of all sports and activities that we have to offer below.
+            </p>
+        </div>                  
+        
+    </div>
+</section>
+
+<section id="services-1724">
+    <div class="cs-container">
+        
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <a href="/blog/goal-ball/" class="cs-link">
+                    <span class="cs-number">01</span>
+                    <h3 class="cs-h3">Goal Ball</h3>
+                </a>
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)"
+                            srcset="/assets/images/GoalballPic.jpg">
+                    <source media="(min-width: 601px)"
+                            srcset="/assets/images/GoalballPic.jpg">
+                    <img decoding="async"
+                            src="/assets/images/GoalballPic.jpg"
+                            alt="finance" width="413" height="374" aria-hidden="true" loading="lazy">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <a href="/blog/beep-baseball/" class="cs-link">
+                    <span class="cs-number">02</span>
+                    <h3 class="cs-h3">Beep Baseball</h3>
+                </a>
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)"
+                            srcset="/assets/images/BeepBaseball.jpg">
+                    <source media="(min-width: 601px)"
+                            srcset="/assets/images/BeepBaseball.jpg">
+                    <img decoding="async"
+                            src="/assets/images/BeepBaseball.jpg"
+                            alt="finance" width="413" height="374" aria-hidden="true" loading="lazy">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <a href="/blog/blind-soccer/" class="cs-link">
+                    <span class="cs-number">03</span>
+                    <h3 class="cs-h3">Blind Soccer</h3>
+                </a>
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)"
+                            srcset="/assets/images/blindsoccer.jpg">
+                    <source media="(min-width: 601px)"
+                            srcset="/assets/images/blindsoccer.jpg">
+                    <img decoding="async"
+                            src="/assets/images/blindsoccer.jpg"
+                            alt="finance" width="413" height="374" aria-hidden="true" loading="lazy">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <a href="/blog/kayaking/" class="cs-link">
+                    <span class="cs-number">04</span>
+                    <h3 class="cs-h3">Kayaking</h3>
+                </a>
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)"
+                            srcset="/assets/images/kayakingpic.jpg">
+                    <source media="(min-width: 601px)"
+                            srcset="/assets/images/kayakingpic.jpg">
+                    <img decoding="async"
+                            src="/assets/images/kayakingpic.jpg"
+                            alt="finance" width="413" height="374" aria-hidden="true" loading="lazy">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <a href="/blog/tandem-cycling/" class="cs-link">
+                    <span class="cs-number">05</span>
+                    <h3 class="cs-h3">Tandem Cycling</h3>
+                </a>
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)"
+                            srcset="/assets/images/BikingPic.jpg">
+                    <source media="(min-width: 601px)"
+                            srcset="/assets/images/BikingPic.jpg">
+                    <img decoding="async"
+                            src="/assets/images/BikingPic.jpg"
+                            alt="finance" width="413" height="374" aria-hidden="true" loading="lazy">
+                </picture>
+            </li>
+        </ul>
+    </div>
+</section>
+<!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
+
+
+                                
+
+    {% include 'components/cta.html' %}
+
+{% endblock %}

@@ -1,0 +1,40 @@
+---
+title: 'Volunteer'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'volunteer/'
+eleventyNavigation:
+    key: Volunteer
+    order: 600
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/blog.css">
+{% endblock %}
+
+{% block body %}
+    <!-- ============================================ -->
+    <!--                    LANDING                   -->
+    <!-- ============================================ -->
+
+    <section id="int-hero">
+        <h1 id="home-h">Volunteer</h1>
+        <picture>
+            <source media="(max-width: 600px)" srcset="/assets/images/GroupPhoto9.jpg">
+            <source media="(min-width: 601px)" srcset="/assets/images/GroupPhoto9.jpg">
+            <img aria-hidden="true" decoding="async" src="/assets/images/GroupPhoto9.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
+        </picture>
+    </section>
+
+<!-- ============================================ -->
+<!--                Contact Form                  -->
+<!-- ============================================ -->
+
+    <section id="cs-contact">
+        <div class="cs-container">
+            <script type="text/javascript" src="https://form.jotform.com/jsform/242057792800154"></script>
+            
+        </div>                                
+{% endblock %}
