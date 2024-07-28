@@ -11,7 +11,7 @@ imageAlt: Kitchen
 
 ## What is Beep Baseball
 
-America’s favorite pastime is adapted for blind and visually impaired athletes with beep baseball.  Players hone their batting and fielding techniques with the goal of competing in the National Beep Baseball Association World Series, held every July/August.  Atlanta’s own Team Chaos has competed in the NBBA World Series xxx times since it was first played in the summer of 1976 in St. Paul, Minnesota.  Beep baseball practices are held on [DAY] from [TIME] to [TIME] at Coan Park in Atlanta.
+America’s favorite pastime is adapted for blind and visually impaired athletes with beep baseball.  Players hone their batting and fielding techniques with the goal of competing in the National Beep Baseball Association World Series, held every July/August.  Atlanta’s own Team Chaos has competed in the NBBA World Series xxx times since it was first played in the summer of 1976 in St. Paul, Minnesota.  Beep baseball practices are held on Saturdays from 10:00 AM to 2:00 PM at Coan Park in Atlanta.
 
 - For more scheduling information, please keep an eye on our [Facebook](https://www.facebook.com/gablindsports/) page.
 
